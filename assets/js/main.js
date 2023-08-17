@@ -1,16 +1,12 @@
 const form = document.getElementById('telephoneForm');
 const telephoneInput = document.getElementById('telephone');
-let isSubmitted = false
 
 telephoneInput.addEventListener('input', function () {
-  if (isSubmitted) {
-    validateTelephone(telephoneInput.value)
-  }
+  validateTelephone(telephoneInput.value)
 })
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-  isSubmitted = true
   if (!validateTelephone(telephoneInput.value)) {
     return
   }
