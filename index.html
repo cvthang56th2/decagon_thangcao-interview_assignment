@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Telephone Form with Validation</title>
+  </head>
+  <body class="d-flex justify-content-center align-items-center px-4">
+    <form id="telephoneForm" class="border shadow p-4 rounded-4">
+      <h4>Telephone Form with Validation</h4>
+      <div>
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" placeholder="Enter telephone..." class="form-control" />
+        <div class="invalid-feedback">
+          Please enter a valid telephone number.
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-between mt-3">
+        <select id="languageSelect" class="form-select" aria-label="Select language">
+          <option value="en" selected>English</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

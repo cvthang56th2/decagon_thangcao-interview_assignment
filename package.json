@@ -1,0 +1,16 @@
+{
+  "name": "decagon_thangcao-interview_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass assets/scss/main.scss assets/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "sass": "^1.65.1"
+  }
+}
