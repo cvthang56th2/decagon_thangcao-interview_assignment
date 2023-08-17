@@ -21,7 +21,7 @@ function checkIsValidTelephone(value) {
   if (!value) {
     return false
   }
-  const intlPhonePattern = /^(?:\+|\d{2})\d{1,15}$/;
+  const intlPhonePattern = /^(\+|0)([1-9]\d{0,2})?(\d{6,14})$/;
   return intlPhonePattern.test(value)
 }
 
